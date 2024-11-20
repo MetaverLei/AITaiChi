@@ -103,6 +103,10 @@
         text-align: left;
     }
 
+    .zi{
+      font-family: 'fangsong';
+    }
+
     .qsort{
         position: absolute;
         top: 0;
@@ -163,29 +167,42 @@
     <!-- 内容主体区域 -->
     <div style="padding: 30px;">
         <div class="layui-panel" id="preview">
-            <fieldset class="layui-elem-field layui-field-title">
-                <legend>项目成果概述</legend>
+            <fieldset class="layui-elem-field layui-field-title zi">
+                <legend><b>项目成果概述</b></legend>
             </fieldset>
         </div>
         <div class="layui-panel" style="top: 3px;">
-            <div style="padding:15px">
-                内容<br>
-                1<br>
-                2<br>
-                3<br>
-                4<br>
-                5<br>
-                6<br>
-                7<br>
-                8<br>
-                9<br>
-                0<br>
+            <div style="padding:15px; font-family:'fangsong'; font-size:20px;">
+              本项目由一支富有创新精神的团队精心打造，旨在通过现代科技手段展示和传承陈式太极拳这一源远流长的中国传统文化。
+              团队成员亲自前往<b>陈氏太极拳的发源地——陈家沟</b>，进行实地采访与深入调研，并结合以当今先进的AI技术，
+              将这片历史厚重的土地与其丰富的文化内涵以全新的方式呈现给广大用户。
+              <br><br>
+              在项目的技术实现上，我们巧妙融合了<b>多个先进的AI技术与前端开发工具</b>，
+              致力于创造一个既具视觉冲击力又富有互动性的宣传与学习陈氏太极拳的网页。
+              <br><br>
+              <b>&diams; Domo AI：</b>团队运用当今较为先进的AI工具Domo AI，主要使用了其中的原视频转动画技术，采用其中的<b>Anime v8（素描动漫风格）</b>,
+              通过这一创新的技术，我们将项目前期在陈家沟的<b>实地拍摄视频</b>转换为精美的<b>素描画面</b>，使得传统的武术表演焕发出全新的艺术形式。
+              每一招每一式，都在流畅的动画中栩栩如生，令观众仿佛亲临其境，以一种更为新颖的形式呈现给大众。
+              <br><br>
+              <b>&diams; Stable Diffusion：</b>为了打造一个充满创意与艺术感的互动问答环节，我们采用了Stable Diffusion技术，主要采用了其中的
+              <b>anyting-v5模型</b>与<b>ControlNet</b>中的<b>Canny</b>（硬边缘）、<b>OpenPose</b>（姿态）、<b>Tile</b>（分块）模型，
+              生成了与陈式太极拳相关的精美插图和场景图，这些图像不仅提升了网页的美观度，还极大增强了用户参与问答互动的趣味性和体验感，并辅助用户学习到部分陈氏太极拳知识。
+              <br><br>
+              <b>&diams; Layui框架：</b>在网页设计与前端开发方面，我们选用了Layui这一高效、灵活的UI框架，
+              使得网页布局简洁大方、功能齐全、用户体验流畅。同时，Layui的模块化设计让我们能够根据项目需求高效地集成各种功能。
+              <br><br>
+              通过这些创新技术的应用，该项目不仅为用户呈现了一个充满活力和现代感的太极拳文化展示平台，
+              更在传统文化的基础上，注入了科技与创意的力量。我们希望通过这个项目，让更多人了解陈式太极拳的深厚底蕴，
+              感受其独特的魅力，并激发对中国传统文化的关注与热爱。
+              <br><br>
+              让我们一起在这一片文化的沃土上，探寻陈氏太极拳的智慧与哲理，传承经典，创新未来。
+              <br>
             </div>  
         </div>
 
         <div class="layui-panel" style="top: 60px;" id="aivideo">
-            <fieldset class="layui-elem-field layui-field-title">
-                <legend>AI+宣传视频</legend>
+            <fieldset class="layui-elem-field layui-field-title zi">
+                <legend><b>AI+宣传视频</b></legend>
             </fieldset>
         </div>
 
@@ -196,8 +213,8 @@
         </div>
 
         <div class="layui-panel" style="position: relative;" id="aibook">
-          <fieldset class="layui-elem-field layui-field-title">
-              <legend>陈氏太极拳演示手册（前十二式）</legend>
+          <fieldset class="layui-elem-field layui-field-title zi">
+              <legend><b>陈氏太极拳演示手册（前十二式）</b></legend>
           </fieldset>
         </div>
 
@@ -211,7 +228,7 @@
                         <div class="feng", style="background-image: url(img/1式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/起势.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第一式</p>
                             <h1 style="padding-top: 20px;padding-left: 40px;">起势</h1>
@@ -227,7 +244,7 @@
                         <div class="feng", style="background-image: url(img/2式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/野马分鬃.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第二式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">左右野马分鬃</h3>
@@ -245,7 +262,7 @@
                         <div class="feng", style="background-image: url(img/3式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/白鹤亮翅.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第三式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">白鹤亮翅</h3>
@@ -261,7 +278,7 @@
                         <div class="feng", style="background-image: url(img/4式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/搂膝拗步.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第四式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">左右搂膝拗步</h3>
@@ -279,7 +296,7 @@
                         <div class="feng", style="background-image: url(img/5式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/手挥琵琶.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第五式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">手挥琵琶</h3>
@@ -295,7 +312,7 @@
                         <div class="feng", style="background-image: url(img/6式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/倒卷肱.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第六式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">左右倒卷肱</h3>
@@ -314,7 +331,7 @@
                         <div class="feng", style="background-image: url(img/7式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/左揽雀尾.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第七式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">左揽雀尾</h3>
@@ -330,7 +347,7 @@
                         <div class="feng", style="background-image: url(img/8式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/右揽雀尾.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第八式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">右揽雀尾</h3>
@@ -346,7 +363,7 @@
                         <div class="feng", style="background-image: url(img/9式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/单鞭1.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第九式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">单鞭</h3>
@@ -362,7 +379,7 @@
                         <div class="feng", style="background-image: url(img/10式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/云手.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第十式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">云手</h3>
@@ -380,7 +397,7 @@
                         <div class="feng", style="background-image: url(img/11式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/单鞭2.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第十一式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">单鞭</h3>
@@ -396,7 +413,7 @@
                         <div class="feng", style="background-image: url(img/12式.png);"></div>  
                         <div class="wen">
                             <video class="bookvideo" loop="loop" controls="controls" poster="">
-                              <source src="video/主题片.mp4" type="video/mp4">
+                              <source src="video/高探马.mp4" type="video/mp4">
                             </video>
                             <p style=" padding-top: 20px; padding-left: 40px;padding-right: 15px;">第十二式</p>
                             <h3 style="padding-top: 20px;padding-left: 40px;">高探马</h3>
@@ -414,8 +431,8 @@
       </div>
 
         <div class="layui-panel" style="top:60px" id="qa">
-            <fieldset class="layui-elem-field layui-field-title">
-                <legend>趣味问答（看图识动作）</legend>
+            <fieldset class="layui-elem-field layui-field-title zi">
+                <legend><b>趣味问答（看图识动作）</b></legend>
             </fieldset>
         </div>
         <div style="position: relative; top: 80px;">
@@ -642,7 +659,7 @@
     </div>
     <div class="layui-footer">
       <!-- 底部固定区域 -->
-      请在电脑端进行查看
+      动感地带AI+高校创智计划参赛作品——智·韵太极
     </div>
   </div>
 </div>
